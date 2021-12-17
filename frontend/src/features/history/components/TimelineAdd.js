@@ -62,10 +62,13 @@ export default function TimelineAdd() {
                         id="category-select"
                         // value={value}
                         label="category"
+                        value={'normal'}
                     // onChange={handleChange}
                     >
+                        <MenuItem value={'normal'}>일반</MenuItem>
                         <MenuItem value={'visit'}>방문</MenuItem>
                         <MenuItem value={'payment'}>결제 내역</MenuItem>
+                        <MenuItem value={'study'}>공부</MenuItem>
                     </Select>
                 </FormControl>
                 <TextField id="outlined-basic" label="장소" variant="outlined" sx={{ width: '20ch' }} placeholder="방문 장소" />
